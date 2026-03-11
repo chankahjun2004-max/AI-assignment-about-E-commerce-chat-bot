@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../static/style.css">
+        <title>Chatbot</title>
+    </head>
+
+    <body>
+                    <div class="container">
+                      <!-- Sidebar -->
+                      <div class="sidebar">
+                        <div class="model-card" data-model="1">
+                          <img src="gemma.png" alt="Gemma">
+                          <div>
+                            <h4>Gemma</h4>
+                            <p>Google DeepMind's LLM</p>
+                          </div>
+                        </div>
+                        <div class="model-card" data-model="2">
+                          <img src="llama.png" alt="LLaMA">
+                          <div>
+                            <h4>LLaMA</h4>
+                            <p>Meta's Open LLM</p>
+                          </div>
+                        </div>
+                        <div class="model-card" data-model="3">
+                          <img src="mistral.png" alt="Mistral">
+                          <div>
+                            <h4>Mistral</h4>
+                            <p>Lightweight, high-speed model</p>
+                          </div>
+                        </div>
+                      </div>
+            <section class="msger">
+                <header class="msger-header">
+                    <div class="msger-header-title">
+                        <img src="../static/chatbot.jpeg" alt="">
+                        <p id="chat-title">Chatbot</p>
+                    </div>
+                </header>
+
+                <!-- Three separate chat windows for each model -->
+                <main class="msger-chat" id="chat-gemma" data-model="1"></main>
+                <main class="msger-chat hidden" id="chat-llama" data-model="2"></main>
+                <main class="msger-chat hidden" id="chat-mistral" data-model="3"></main>
+
+                <form class="msger-inputarea">
+                    <input type="text" class="msger-input" placeholder="Enter your message...">
+                    <button type="submit" class="msger-send-btn"><i class="fa fa-paper-plane"></i></button>
+                </form>
+            </section>
+        <script src="../static/main.js"></script>
+    </body>
+</html>

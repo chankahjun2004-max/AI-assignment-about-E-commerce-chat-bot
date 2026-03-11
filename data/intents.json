@@ -1,0 +1,19 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["hello", "hi", "good morning"],
+            "responses": ["Hello! How can I assist you today?"]
+        },
+        {
+            "tag": "order_tracking",
+            "patterns": ["Where is my product?", "Track my order", "Order status"],
+            "responses": ["Can you provide your order number, please?"]
+        },
+        {
+            "tag": "refund_policy",
+            "patterns": ["How do I get a refund?", "Return my item", "Refund policy"],
+            "responses": ["To process a refund, please provide your order number."]
+        }
+    ]
+}

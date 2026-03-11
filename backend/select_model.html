@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Chatbot Model</title>
+</head>
+<body>
+    <h1>Select a Chatbot Model</h1>
+    <form action="/select-model" method="post">
+        <label for="model">Choose a model:</label>
+        <select name="model" id="model" required>
+            <option value="1">Gemma3</option>
+            <option value="2">Llama3</option>
+            <option value="3">Mistral</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
